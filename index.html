@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!---Google Fonts Embed Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SunBeam Apothecary</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/svg+xml">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<!---HEADER-->
+
+<header class="header" data-header>
+    <div class="container">
+
+        <div class="input-wrapper">
+            <input type="search" name="search" placeholder="Search..." class="input-field">
+
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <img src="assets/images/SunBeam%20Apothecary.png" class="logo" alt="logo" width="130">
+
+        <div class="header-action">
+
+            <button class="header-action-btn" aria-label="user">
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <button class="header-action-btn" aria-label="favorite list">
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+                <span class="btn-badge">0</span>
+            </button>
+
+            <button class="header-action-btn" aria-label="cart">
+                <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                <span class="btn-badge">0</span>
+            </button>
+
+            <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+
+
+
+<!---DASHBOARD-->
+
+<div class="sidebar" data-navbar>
+    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+    <div class="wrapper">
+
+        <ul class="sidebar-list">
+
+            <li>
+                <p class="sidebar-list-title">Language</p>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar-link">English</a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar-link">Hindi</a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar-link">Kannada</a>
+            </li>
+
+        </ul>
+
+        <ul class="sidebar-list">
+
+            <li>
+                <p class="sidebar-list-title">Currency</p>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar-link">INR - Indian Rupees</a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar-link">USD - United States Dollar</a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar-link">EUR - Euros</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <nav class="navbar">
+        <ul class="navbar-list">
+
+            <li class="navbar-item">
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="#product" class="navbar-link" data-nav-link>Product</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="#blog" class="navbar-link" data-nav-link>Blogs</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <ul class="contact-list">
+
+        <li>
+            <p class="contact-list-title">Contact Us</p>
+        </li>
+
+        <li class="contact-item">
+            <address class="address">
+                Brookefield, Bengaluru - 560066
+            </address>
+        </li>
+
+        <li class="contact-item">
+            <a href="#" class="contact-link">support@sunbeam.in</a>
+        </li>
+
+        <li class="contact-item">
+            <a href="#" class="contact-link">+916789123456</a>
+        </li>
+
+    </ul>
+
+    <div class="social-wrapper">
+
+        <p class="social-list-title">Follow Us On Socials</p>
+
+        <ul class="social-list">
+
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="overlay" data-overlay data-nav-toggler></div>
+
+
+<main>
+    <article>
+
+        <!--HERO INTRO-->
+
+        <section class="section hero" id="home" aria-label="home">
+            <div class="container">
+
+                <ul class="hero-list">
+
+                    <li>
+                        <div class="hero-card">
+
+                            <figure class="card-banner img-holder" style="--width: 285; --height: 396;">
+                                <img src="./assets/images/product-11.jpeg" width="285" height="396" alt="Oily skin"
+                                     class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+                                <h3>
+                                    <a href="#" class="card-title">For Oily Skin</a>
+                                </h3>
+
+                                <p class="card-text">Explore</p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="colspan-2">
+                        <div class="hero-card">
+
+                            <figure class="card-banner img-holder" style="--width: 568; --height: 389;">
+                                <img src="./assets/images/head.jpeg" width="568" height="389" alt="All Skin"
+                                     class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+                                <h3>
+                                    <a href="#" class="card-title">For All Skin Types</a>
+                                </h3>
+
+                                <p class="card-text">Explore</p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="hero-card">
+
+                            <figure class="card-banner img-holder" style="--width: 285; --height: 396;">
+                                <img src="./assets/images/product-19.jpeg" width="285" height="396" alt="Dry Skin"
+                                     class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+                                <h3>
+                                    <a href="#" class="card-title">For Dry Skin</a>
+                                </h3>
+
+                                <p class="card-text">Explore</p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="colspan-2">
+                        <div class="hero-card">
+
+                            <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                                <img src="./assets/images/product-8.jpeg" width="580" height="213" alt="Comb SKin"
+                                     class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+                                <h3>
+                                    <a href="#" class="card-title">For Combination Skin</a>
+                                </h3>
+
+                                <p class="card-text">Explore</p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="colspan-2">
+                        <div class="hero-card">
+
+                            <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                                <img src="./assets/images/product-13.jpeg" width="580" height="213" alt="Sensitive"
+                                     class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+                                <h3>
+                                    <a href="#" class="card-title">For Sensitive Skin</a>
+                                </h3>
+
+                                <p class="card-text">Explore</p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!--ABOUT-->
+
+        <section class="section about" id="about" aria-label="about">
+            <div class="container">
+
+                <h2 class="section-title">SunBeam Apothecary</h2>
+                <h3 class="section-title">Welcomes You to the Future of Skincare</h3>
+
+                <p class="section-text">
+                    Unveil Your Radiance, Naturally! Explore our collection of sunshine-infused elixirs and botanical blends, designed to pamper and rejuvenate your skin. Welcome to a gender inclusive safe space. Here at SunBeam, there is no bias, only bliss.
+                </p>
+
+                <div class="about-card">
+                    <figure class="card-banner img-holder" style="--width: 1170; --height: 450;">
+                        <img src="./assets/images/promo.jpg" width="1170" height="450" loading="lazy" alt="SunBeam promo"
+                             class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play video">
+                        <ion-icon name="play-circle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!--SALE PRODUCTS-->
+
+        <section class="section product" id="products1" aria-label="product">
+            <div class="container">
+
+                <div class="title-wrapper">
+                    <h2 class="h2 section-title">SunBeam Sale Season is LIVE!</h2>
+                    <p id="timer"></p>
+                </div>
+
+                <ul class="grid-list product-list" data-filter="all">
+
+                    <li class="products3">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-1.jpeg" width="300" height="300" loading="lazy"
+                                     alt="Oat Extract Serum" class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+
+                                <ul class="badge-list">
+
+                                    <li>
+                                        <div class="badge orange">Sale</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="badge cyan">-10%</div>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Face Serum with Oat Extracts</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <del class="del">₹.499</del>
+
+                                    <data class="price" value="499">₹.449</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-2.jpeg" width="300" height="300" loading="lazy" alt="Toner"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                                <ul class="badge-list">
+
+                                    <li>
+                                        <div class="badge orange">Sale</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="badge cyan">-20%</div>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-badge">Out of Stock</div>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Polyhydroxy Acid (PHA) 3% Face Toner</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <del class="del">₹.499</del>
+                                    <data class="price" value="399">₹.399</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products3">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-3.jpeg" width="300" height="300" loading="lazy"
+                                     alt="Moisturizer" class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                                <ul class="badge-list">
+
+                                    <li>
+                                        <div class="badge orange">Sale</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="badge cyan">-20%</div>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Vitamin B5 10% Moisturizer with AloeVera</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <del class="del">₹.299</del>
+                                    <data class="price" value="299">₹.239</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-4.jpeg" width="300" height="300" loading="lazy" alt="Sunscreen"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                                <ul class="badge-list">
+
+                                    <li>
+                                        <div class="badge orange">Sale</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="badge cyan">-30%</div>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">SPF 50 Sunscreen</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <del class="del">₹.599</del>
+                                    <data class="price" value="599">₹.319</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+            </ul></div>
+        </section>
+        <section class="section product" id="product" aria-label="product">
+            <div class="container">
+                <div class="title-wrapper">
+                    <h2 class="h2 section-title">Our Fan Favourites</h2>
+                    <ul class="filter-btn-list">
+
+                        <li class="filter-btn-item">
+                            <button class="filter-btn active" data-filter-btn="all">All Products</button>
+                        </li>
+
+                        <li class="filter-btn-item">
+                            <button class="filter-btn" data-filter-btn="oily">For Oily Skin</button>
+                        </li>
+
+                        <li class="filter-btn-item">
+                            <button class="filter-btn" data-filter-btn="dry">For Dry Skin</button>
+                        </li>
+
+                        <li class="filter-btn-item">
+                            <button class="filter-btn" data-filter-btn="sensitive">For Sensitive Skin</button>
+                        </li>
+
+                    </ul>
+                </div>
+                <ul class="grid-list product-list" data-filter="all">
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-5.jpeg" width="300" height="300" loading="lazy"
+                                     alt="lip oil" class="img-cover">
+
+                                <ul class="card-action-list">
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Vanilla Lip Oil</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="199">₹.199</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products3">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-6.jpeg" width="300" height="300" loading="lazy" alt="eyecream"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Eye Cream with Apple Seed Extract</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="259">₹.259</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-7.jpeg" width="300" height="300" loading="lazy"
+                                     alt="High Quality Glass Bottle" class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Oil Infused Micellar Water</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="299">₹.299</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-8.jpeg" width="300" height="300" loading="lazy"
+                                     alt="Living Room & Bedroom Lights" class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Body Lotion with SPF 30++</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="450">₹.450</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products2">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-9.jpeg" width="300" height="300" loading="lazy" alt="Nancy Chair"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Cleanser with Tea Tree Extracts</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="290">₹290</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products2">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-10.jpeg" width="300" height="300" loading="lazy" alt="Simple Chair"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Charcoal Face Mask</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="99">₹.99</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products2">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-11.jpeg" width="300" height="300" loading="lazy" alt="Smooth Disk"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Hand Cream with Rice Water</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="199">₹.199</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products2">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-12.jpeg" width="300" height="300" loading="lazy" alt="Table Black"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Ultra Moisturizing Foot Cream</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="250">₹.250</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products2">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-13.jpeg" width="300" height="300" loading="lazy"
+                                     alt="Body Scrub" class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Refreshing Face Mist</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="500">₹.500</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-14.jpeg" width="300" height="300" loading="lazy"
+                                     alt="Body Scrub" class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Exfoliating Body Scrub</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="450">₹.450</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products3">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-15.jpeg" width="300" height="300" loading="lazy"
+                                     alt="Face Scrub" class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Face Scrub with Coffee Extracts</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="550">₹.550</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products3">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-16.jpeg" width="300" height="300" loading="lazy"
+                                     alt="Body Oil" class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Rejuvenating Body Oil</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="770">₹.770</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products3">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-17.jpeg" width="300" height="300" loading="lazy" alt="serum2"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Face Serum with 10% Niacinamide</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="299">₹.299</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-18.jpeg" width="300" height="300" loading="lazy" alt="Wipes"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Makeup Wipes with Rose Water</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="279">₹.279</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-19.jpeg" width="300" height="300" loading="lazy" alt="Body Wash"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Tropical Body Wash</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="499">₹.499</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="products1">
+                        <div class="product-card">
+
+                            <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/product-20.jpeg" width="300" height="300" loading="lazy" alt="Gua Sha"
+                                     class="img-cover">
+
+                                <ul class="card-action-list">
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button class="card-action-btn" aria-label="add to wishlist" title="add to wishlist">
+                                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Rose Quartz Gua Sha</a>
+                                </h3>
+
+                                <div class="card-price">
+                                    <data class="price" value="1499">₹.1499</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!--BLOG-->
+
+        <section class="section blog" id="blog" aria-label="blog">
+            <div class="container">
+
+                <div class="title-wrapper">
+                    <h2 class="h2 section-title">Check out our blog</h2>
+
+                    <a href="#" class="btn-link">
+                        <span class="span">View All</span>
+
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                </div>
+
+                <ul class="grid-list">
+
+                    <li>
+                        <div class="blog-card">
+
+                            <div class="card-banner img-holder" style="width: 374px; height: 243px;">
+                                <img src="./assets/images/article-3.jpg" width="374" height="243" loading="lazy"
+                                     alt="7 Plant-Based Oils That May Give You Healthier Hair" class="img-cover">
+
+                                <a href="#" class="card-btn">
+                                    <span class="span">Read more</span>
+
+                                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">7 Plant-Based Oils That May Give You Healthier Hair</a>
+                                </h3>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <time class="card-meta-text" datetime="2022-09-27">April 24, 2024</time>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <a href="#" class="card-meta-text">Srilakshmi R</a>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <a href="#" class="card-meta-text">Content Admin</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="blog-card">
+
+                            <div class="card-banner img-holder" style="width: 374px; height: 243px;">
+                                <img src="./assets/images/article-2.jpg" width="374" height="243" loading="lazy"
+                                     alt="Navy Blue & White Striped Area Rugs" class="img-cover">
+
+                                <a href="#" class="card-btn">
+                                    <span class="span">Read more</span>
+
+                                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">8 Potential Health Benefits of Collagen — and 1 Thing It Can’t Do</a>
+                                </h3>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <time class="card-meta-text" datetime="2022-09-25">November 25, 2023</time>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <a href="#" class="card-meta-text">Srilakshmi R</a>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <a href="#" class="card-meta-text">Content Admin</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="blog-card">
+
+                            <div class="card-banner img-holder" style="width: 374px; height: 243px;">
+                                <img src="./assets/images/article-1.jpg" width="374" height="243" loading="lazy"
+                                     alt="Winter Skin" class="img-cover">
+
+                                <a href="#" class="card-btn">
+                                    <span class="span">Read more</span>
+
+                                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">The Top 10 Tips for a Healthy Winter Skin</a>
+                                </h3>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <time class="card-meta-text" datetime="2022-09-18">March 18, 2024</time>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <a href="#" class="card-meta-text">Samanvitha T</a>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                         <a href="#" class="card-meta-text">Content Head</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!--NEWSLETTER-->
+
+        <section class="section newsletter" aria-label="newsletter">
+            <div class="container">
+
+                <div class="newsletter-card">
+
+                    <div class="card-content">
+                        <h2 class="h2 section-title">Our Weekly Newsletter</h2>
+
+                        <p class="section-text">
+                            Subscribe to get a discount of upto 50% off!
+                        </p>
+                    </div>
+
+                    <form action="" class="card-form">
+                        <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+
+                        <button type="submit" class="newsletter-btn" aria-label="subscribe">
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </article>
+</main>
+
+<!--FOOTER-->
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-top section">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">SunBeam Apothecary</a>
+
+                <ul>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
+
+                        <address class="address">
+                            SunBeam Apothecary, Brookefield, Bengaluru - 560066
+                        </address>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
+
+                        <a href="tel:+1234567890" class="footer-link">+916789123456</a>
+                    </li>
+
+                    <li>
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Help & Information</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Help & Contact</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Returns & Refunds</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Stores Near You</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">About Us</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">What We Do</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">FAQ Page</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Contact Us</a>
+                </li>
+
+            </ul>
+
+            <div class="footer-list">
+
+                <p class="footer-list-title">Sign Up for Promotional Emails</p>
+
+                <form action="" class="footer-form">
+                    <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+
+                    <button type="submit" class="footer-form-btn">
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+
+                <div class="wrapper">
+
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                    <a href="#" class="footer-link">Policy</a>
+                    <a href="#" class="footer-link">Map</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p class="copyright">
+                &copy; 2024 All Rights Reserved by <a href="#" class="copyright-link">SunBeam Apothecary</a>.
+            </p>
+
+        </div>
+
+    </div>
+</footer>
+
+<!--BACK TO TOP-->
+
+<a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+</a>
+
+<script src="script.js"></script>
+
+<!--ion-icon link-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
